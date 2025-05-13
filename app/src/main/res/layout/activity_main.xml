@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -10,39 +11,53 @@
         android:id="@+id/textViewLocation"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Posizione non definita"
+        android:text="Posizione: Non definita"
         android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:gravity="center"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="24dp"/>
 
     <Button
-        android:id="@+id/button_toggle_service"
-        android:layout_width="match_parent"
+        android:id="@+id/buttonUpdateLocation"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Avvia condivisione"
-        app:layout_constraintTop_toBottomOf="@+id/textView_location"
+        android:text="Aggiorna Posizione"
+        app:layout_constraintTop_toBottomOf="@id/textViewLocation"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
 
     <Button
-        android:id="@+id/button_send_now"
-        android:layout_width="match_parent"
+        android:id="@+id/buttonStartSharing"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Invia posizione ora"
-        app:layout_constraintTop_toBottomOf="@+id/button_toggle_service"
+        android:text="Avvia Condivisione"
+        app:layout_constraintTop_toBottomOf="@id/buttonUpdateLocation"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
 
-    <Spinner
-        android:id="@+id/spinner_frequency"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/buttonStopSharing"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:entries="@array/frequency_options"
-        app:layout_constraintTop_toBottomOf="@+id/button_send_now"
+        android:text="Ferma Condivisione"
+        app:layout_constraintTop_toBottomOf="@id/buttonStartSharing"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonShareSocial"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Condividi sui Social"
+        app:layout_constraintTop_toBottomOf="@id/buttonStopSharing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
