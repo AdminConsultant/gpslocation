@@ -1,0 +1,7 @@
+<resources>
+<string name="app_name">GpsLocation</string>
+<string-array name="frequency_options">
+    <item>Ogni 30 minuti</item>
+    <item>Su richiesta remota</item>
+</string-array>
+</resources>
