@@ -48,13 +48,11 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(libs.firebase.database)
-    implementation(libs.play.services.location)
-    implementation("com.google.firebase:firebase-analytics")
-    implementation ("com.google.firebase:firebase-auth-ktx:23.2.0")
-    implementation ("com.google.android.gms:play-services-location:21.3.0")
-    implementation ("com.google.firebase:firebase-database:21.0.0")
-    implementation ("com.google.firebase:firebase-auth:23.2.0")
-    implementation ("com.google.firebase:firebase-analytics:22.4.0")
+
+    implementation ("com.google.firebase:firebase-auth-ktx:23.2.0")  // Versione aggiornata di firebase-auth
+    implementation ("com.google.firebase:firebase-database:21.0.0")   // Versione aggiornata di firebase-database
+    implementation ("com.google.firebase:firebase-analytics:22.4.0")  // Versione aggiornata di firebase-analytics
+    implementation ("com.google.android.gms:play-services-location:21.3.0")  // Versione aggiornata di play-services-location
 
 
 
