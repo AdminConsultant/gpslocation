@@ -19,8 +19,8 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
-firebase-database = { group = "com.google.firebase", name = "firebase-database", version = "20.3.0" }
-play-services-location = { group = "com.google.android.gms", name = "play-services-location", version = "21.0.1" }
+firebase-database = { group = "com.google.firebase", name = "firebase-database", version = "21.0.0" }
+play-services-location = { group = "com.google.android.gms", name = "play-services-location", version = "21.3.0" }
 
 
 [plugins]
