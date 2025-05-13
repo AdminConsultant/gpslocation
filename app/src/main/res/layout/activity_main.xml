@@ -7,13 +7,16 @@
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/textView_location"
-        android:layout_width="match_parent"
+        android:id="@+id/textViewLocation"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Posizione attuale: N/D"
-        app:layout_constraintBottom_toTopOf="@+id/button_toggle_service"
+        android:text="Posizione non definita"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:layout_marginTop="20dp" />
 
     <Button
         android:id="@+id/button_toggle_service"
